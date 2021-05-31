@@ -10,11 +10,12 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "TB_EMPREGADOS")
-public class Empregado {
+@Table(name = "TB_CLIENTES")
+public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String nome;
-	private Double salario;
+	private Integer idade;
+	private String profissao;
 }
